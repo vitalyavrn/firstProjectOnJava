@@ -7,8 +7,13 @@ import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 
+
 public class DownloadPage {
     private static Document doc;
+
+    DownloadPage(){
+    viewPage();
+    }
 
     private static String getTextPage(){
         try {
@@ -34,10 +39,5 @@ public class DownloadPage {
         frame.setSize(1200, 500);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
-    }
-
-    public static void main(String[] args){
-        getTextPage();
-        viewPage();
     }
 }
